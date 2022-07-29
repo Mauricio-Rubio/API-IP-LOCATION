@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
+    />
+    <title>IP API</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1 style="display: flex; justify-content: center;">IP DATA</h1>
+      <div>
+        <button id="buscar">Conocer mi IP</button>
+        <pre id="resultados-ip"></pre>
+      </div>
+      <br>
+      <form id="formulario">
+        <label>
+          IP del usuario
+          <input
+            type="text"
+            placeholder="Introduce tu dirección IP"
+            id="input"
+            required
+          />
+          <small>Por ejemplo 54.85.132.205</small>
+        </label>
+        <button type="submit" id="submit">Buscar informacion</button>
+      </form>
+      <div>
+        <pre id="resultados"></pre>
+      </div>
+      <div id="map" style="weight: 500px; height: 500px;">
+        
+      </div>
+      
+    </main>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtNhUUDDidWTEm7aQ9kJ8GAkgzic29dpc&callback=initMap"
+      defer
+    ></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>
